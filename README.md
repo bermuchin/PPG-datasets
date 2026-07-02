@@ -41,6 +41,20 @@ This repository summarizes each dataset from a research perspective, including:
 | **Sampling Rate** | PPG: 50 Hz, ECG: 125 Hz, ACC/Gyro: 50 Hz |
 | **Ground Truth** | ECG available |
 
+## BIDMC
+
+| 항목 | 내용 |
+|------|------|
+| **Task** | Respiratory Rate Estimation, Heart Rate Estimation |
+| **Subjects** | 53 ICU patients |
+| **Rhythm** | Mixed **(AF not explicitly annotated)** |
+| **Environment** | Intensive Care Unit (ICU) |
+| **Motion Artifact** | Low |
+| **Sensor Location** | Finger |
+| **Signals** | PPG, ECG, Impedance Respiration |
+| **Sampling Rate** | PPG: 125 Hz, ECG: 125 Hz, Respiration: 125 Hz |
+| **Ground Truth** | ECG available |
+
 
 
 ## 통합 비교표
