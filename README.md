@@ -4,14 +4,15 @@ A curated collection of publicly available photoplethysmography (PPG) datasets f
 
 This repository summarizes each dataset from a research perspective, including:
 
+- Task
 - Subjects
-- Sensor location
-- Available signals (PPG, ECG, ACC, etc.)
-- Sampling rate
-- Recording environment
-- Rhythm information (e.g., AF)
+- Rhythm (e.g., AF)
+- Environment
 - Motion artifacts
-- Potential research tasks (Peak Detection, HR, BP, AF, etc.)
+- Sensor location
+- Signals
+- Sampling rate
+- Ground truth
 
 ## BAMI-1
 
@@ -55,6 +56,19 @@ This repository summarizes each dataset from a research perspective, including:
 | **Sampling Rate** | PPG: 125 Hz, ECG: 125 Hz, Respiration: 125 Hz |
 | **Ground Truth** | ECG available |
 
+## CIME
+
+| 항목 | 내용 |
+|------|------|
+| **Task** | Motion Artifact Removal, Heart Rate Estimation, Pulse Rate Variability Estimation |
+| **Subjects** | 48 healthy volunteers |
+| **Rhythm** | Normal Sinus Rhythm only (AF ✗) |
+| **Environment** | Laboratory (Static left hand + Controlled finger motion) |
+| **Motion Artifact** | High |
+| **Sensor Location** | Fingertip |
+| **Signals** | PPG, Accelerometer, Gyroscope, Reference PPG |
+| **Sampling Rate** | PPG: 100 Hz (downsampled, originally 200 Hz), ACC/Gyro: 100 Hz |
+| **Ground Truth** | Reference PPG available |
 
 
 ## 통합 비교표
