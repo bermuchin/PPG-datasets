@@ -17,13 +17,36 @@ This repository summarizes each dataset from a research perspective, including:
 
 | 항목 | 내용 |
 |------|------|
-| **목적 (Task)** | Heart Rate Estimation, Motion Artifact Removal, Signal Quality Assessment |
+| **Task** | Heart Rate Estimation, Motion Artifact Removal, Signal Quality Assessment |
 | **Subjects** | 24 healthy volunteers |
-| **Rhythm** | Normal Sinus Rhythm (NSR) only (AF ✗) |
+| **Rhythm** | Normal Sinus Rhythm only (AF ✗) |
 | **Environment** | Laboratory (Rest + Walking + Running) |
 | **Motion Artifact** | High |
 | **Sensor Location** | Wrist |
 | **Signals** | PPG, ECG, Accelerometer, Gyroscope |
 | **Sampling Rate** | PPG: 50 Hz, ECG: 125 Hz, ACC/Gyro: 50 Hz |
-| **Ground Truth** | ECG available (R-peak 기반 label 생성 가능) |
-| **우리 연구 활용도** | Motion robustness 검증에는 적합, AF Peak Detection에는 제한적 |
+| **Ground Truth** | ECG available |
+
+## BAMI-2
+
+| 항목 | 내용 |
+|------|------|
+| **Task** | Heart Rate Estimation, Motion Artifact Removal, Signal Quality Assessment |
+| **Subjects** | 23 healthy volunteers |
+| **Rhythm** | Normal Sinus Rhythm only (AF ✗) |
+| **Environment** | Laboratory (Rest + Walking + Running + Running while holding treadmill bar + Walking while holding treadmill bar) |
+| **Motion Artifact** | High |
+| **Sensor Location** | Wrist |
+| **Signals** | PPG, ECG, Accelerometer, Gyroscope |
+| **Sampling Rate** | PPG: 50 Hz, ECG: 125 Hz, ACC/Gyro: 50 Hz |
+| **Ground Truth** | ECG available |
+
+
+
+## 통합 비교표
+| Dataset | AF | ECG | Motion | Peak Detection |
+|---------|:--:|:---:|:------:|:--------------:|
+| BAMI-1 | ✗ | ✓ | ✓ | ✓ |
+| BIDMC | ✗ | ✓ | ✗ | ✓ |
+| MIMIC-Perform | ✓ | ✓ | ✗ | ✓ |
+| PulseDB-MIMIC | ✓ | ✓ | ✗ | ✓ |
