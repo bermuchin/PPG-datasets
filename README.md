@@ -19,57 +19,70 @@ This repository summarizes each dataset from a research perspective, including:
 | 항목 | 내용 |
 |------|------|
 | **Task** | Heart Rate Estimation, Motion Artifact Removal, Signal Quality Assessment |
-| **Subjects** | 24 healthy volunteers |
+| **# of Subjects** | 24 |
 | **Rhythm** | Normal Sinus Rhythm only (AF ✗) |
 | **Environment** | Laboratory (Rest + Walking + Running) |
 | **Motion Artifact** | High |
 | **Sensor Location** | Wrist |
 | **Signals** | PPG, ECG, Accelerometer, Gyroscope |
 | **Sampling Rate** | PPG: 50 Hz, ECG: 125 Hz, ACC/Gyro: 50 Hz |
-| **Ground Truth** | ECG available |
+| **Ground Truth** | ECG |
 
 ## BAMI-2
 
 | 항목 | 내용 |
 |------|------|
 | **Task** | Heart Rate Estimation, Motion Artifact Removal, Signal Quality Assessment |
-| **Subjects** | 23 healthy volunteers |
+| **# of Subjects** | 23 |
 | **Rhythm** | Normal Sinus Rhythm only (AF ✗) |
 | **Environment** | Laboratory (Rest + Walking + Running + Running while holding treadmill bar + Walking while holding treadmill bar) |
 | **Motion Artifact** | High |
 | **Sensor Location** | Wrist |
 | **Signals** | PPG, ECG, Accelerometer, Gyroscope |
 | **Sampling Rate** | PPG: 50 Hz, ECG: 125 Hz, ACC/Gyro: 50 Hz |
-| **Ground Truth** | ECG available |
+| **Ground Truth** | ECG |
 
 ## BIDMC
 
 | 항목 | 내용 |
 |------|------|
 | **Task** | Respiratory Rate Estimation, Heart Rate Estimation |
-| **Subjects** | 53 ICU patients |
-| **Rhythm** | Mixed **(AF not explicitly annotated)** |
+| **# of Subjects** | 53 |
+| **Rhythm** | ICU patients - Mixed **(AF not explicitly annotated)** |
 | **Environment** | Intensive Care Unit (ICU) |
 | **Motion Artifact** | Low |
 | **Sensor Location** | Finger |
 | **Signals** | PPG, ECG, Impedance Respiration |
 | **Sampling Rate** | PPG: 125 Hz, ECG: 125 Hz, Respiration: 125 Hz |
-| **Ground Truth** | ECG available |
+| **Ground Truth** | ECG |
 
 ## CIME
 
 | 항목 | 내용 |
 |------|------|
 | **Task** | Motion Artifact Removal, Heart Rate Estimation, Pulse Rate Variability Estimation |
-| **Subjects** | 48 healthy volunteers |
+| **# of Subjects** | 48 |
 | **Rhythm** | Normal Sinus Rhythm only (AF ✗) |
 | **Environment** | Laboratory (Static left hand + Controlled finger motion) |
 | **Motion Artifact** | High |
 | **Sensor Location** | Fingertip |
 | **Signals** | PPG, Accelerometer, Gyroscope, Reference PPG |
 | **Sampling Rate** | PPG: 100 Hz (downsampled, originally 200 Hz), ACC/Gyro: 100 Hz |
-| **Ground Truth** | Reference PPG available |
+| **Ground Truth** | Reference PPG |
 
+## Dryad Nurse Dataset
+
+| 항목 | 내용 |
+|------|------|
+| **Task** | Stress Detection, Physiological Monitoring |
+| **# of Subjects** | 15 |
+| **Rhythm** | Normal Sinus Rhythm only (AF ✗) |
+| **Environment** | Daily clinical environment (Nurses during work) |
+| **Motion Artifact** | High |
+| **Sensor Location** | Wrist |
+| **Signals** | PPG (BVP), Accelerometer, Electrodermal Activity (EDA), Skin Temperature, Heart Rate (HR), Inter-Beat Interval (IBI), Event Tags |
+| **Sampling Rate** | BVP 64 Hz, ACC 32 Hz, EDA 4 Hz, HR 1 Hz, Skin Temp 4 Hz, IBI event-based |
+| **Ground Truth** | BVP-derived HR/IBI |
 
 ## 통합 비교표
 | Dataset | AF | ECG | Motion | Peak Detection |
