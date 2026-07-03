@@ -96,8 +96,8 @@ This repository summarizes each dataset from a research perspective, including:
 | **Sensor Location** | Wrist (Galaxy Watch, Empatica E4), Chest (Polar H10) |
 | **Signals** | PPG, ECG, Accelerometer, Skin Temperature, Heart Rate (HR), Inter-Beat Interval (IBI) |
 | **Sampling Rate** | Galaxy Watch PPG: 25 Hz, Galaxy Watch ACC: 25 Hz, 
-                      E4 BVP: 64 Hz, E4 ACC: 32 Hz, 
-                      Polar H10 ECG: 130 Hz, Polar H10 ACC: 200 Hz |
+\n E4 BVP: 64 Hz, E4 ACC: 32 Hz, 
+\n Polar H10 ECG: 130 Hz, Polar H10 ACC: 200 Hz |
 | **Ground Truth** | ECG (Polar H10) |
 
 ## 통합 비교표
