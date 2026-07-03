@@ -85,12 +85,25 @@ This repository summarizes each dataset from a research perspective, including:
 |------|------|
 | **Task** | Heart Rate Estimation, Heart Rate Variability Estimation, Stress Detection, Motion Artifact Analysis |
 | **# of Subjects** | 24 |
-| **Rhythm** | Healthy population (AF ✗) |
+| **Rhythm** | Normal Sinus Rhythm only (AF ✗) |
 | **Motion Artifact** | Rest, TSST, SSST, Screen Reading, Keyboard Typing, Mobile Typing, Standing, Walking, Jogging, Running |
 | **Sensor Location** | Wrist (Galaxy Watch 5, Empatica E4), Chest (Polar H10) |
 | **Signals** | PPG, ECG, Accelerometer, Skin Temperature, Heart Rate (HR), Inter-Beat Interval (IBI) |
 | **Sampling Rate** | Galaxy Watch: PPG 25 Hz, ACC 25 Hz, HR 1 Hz; Empatica E4: BVP 64 Hz, ACC 32 Hz, Temp 4 Hz, HR 1 Hz; Polar H10: ECG 130 Hz, ACC 200 Hz, HR 1 Hz |
 | **Ground Truth** | ECG (Polar H10) |
+
+## Longterm ECG and wrist based PPG recordings with annotated AF episodes
+
+| 항목 | 내용 |
+|------|------|
+| **Task** | Atrial Fibrillation Detection, Heart Rate Estimation |
+| **# of Subjects** | 8 |
+| **Rhythm** | Atrial Fibrillation (AF ✓) |
+| **Motion Artifact** | Daily living activities |
+| **Sensor Location** | Wrist (PPG), Chest (ECG) |
+| **Signals** | PPG, ECG, Accelerometer |
+| **Sampling Rate** | PPG: 100 Hz, ACC: 50 Hz, ECG: - |
+| **Ground Truth** | ECG |
 
 ## 통합 비교표
 | Dataset | AF | ECG | Motion | Peak Detection |
