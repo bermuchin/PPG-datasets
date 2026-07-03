@@ -105,6 +105,19 @@ This repository summarizes each dataset from a research perspective, including:
 | **Sampling Rate** | PPG: 100 Hz, ACC: 50 Hz, ECG: - |
 | **Ground Truth** | ECG |
 
+## MIMIC PERform
+
+| 항목 | 내용 |
+|------|------|
+| **Task** | Beat Detection, Heart Rate Estimation, Signal Quality Assessment |
+| **# of Subjects** | 200 (Training), 200 (Testing), 35 (AF) - AF (19 subjects) or normal sinus rhythm (16 subjects) |
+| **Rhythm** | Normal Sinus Rhythm + Atrial Fibrillation (AF ✓) |
+| **Motion Artifact** | Real-world ICU monitoring |
+| **Sensor Location** | Finger (PPG), Chest (ECG) |
+| **Signals** | PPG, ECG, Respiration(Training/Testing), AF Labels(AF Dataset) |
+| **Sampling Rate** | PPG: 125 Hz, ECG: 125 Hz |
+| **Ground Truth** | ECG-derived QRS detections, Cardiologist AF annotations (AF Dataset) |
+
 ## 통합 비교표
 | Dataset | AF | ECG | Motion | Peak Detection |
 |---------|:--:|:---:|:------:|:--------------:|
